@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-family: "PT Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+.come-soon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/pexels-photo-998641.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.come-soon .container {
+  color: #fff;
+  max-width: 900px;
+  text-align: center;
+  padding: 0 50px;
+  /* margin: 150px auto; */
+}
+@media (max-width: 768px) {
+  .come-soon .container {
+    max-width: 100%;
+    padding: 20px;
+  }
+}
+.come-soon .title {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 500;
+}
+.title span {
+  font-weight: 700;
+  color: #009866;
+}
+.come-soon .form {
+  margin: 50px 0px;
+}
+.come-soon .form .field {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.come-soon .form .field input {
+  width: 100%;
+  height: 100%;
+  padding: 5px 10px;
+  font-size: 20px;
+  outline: none;
+  border: none;
+}
+.come-soon .form .field button {
+  height: 100%;
+  width: 200px;
+  outline: none;
+  border: none;
+  background-color: #fc4782;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.come-soon .form .field button:hover {
+  background-color: #000;
+}
+
+.come-soon .count-down {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.count-down .all {
+  width: 100px;
+  height: 100%;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.count-down .all .num {
+  font-size: 25px;
+  font-weight: 500;
+}
+@media (max-width: 768px) {
+  .count-down {
+    height: 80px;
+  }
+  .count-down .all {
+    width: 75px;
+    height: 80%;
+  }
+}
+.count-down .all .text {
+  font-size: 15px;
+}
+@media (max-width: 400px) {
+  .count-down .all .num {
+    font-size: 20px;
+  }
+  .count-down .all .text {
+    font-size: 12px;
+  }
+}
+.dot {
+  font-size: 45px;
+}
+.congratolation {
+  margin: 30px 0;
+  display: none;
+}
+.congratolation span {
+  color: red;
+  font-weight: bold;
+  font-size: 40px;
+}
